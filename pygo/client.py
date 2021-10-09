@@ -177,7 +177,7 @@ class AsyncConfiguration:
     _binance_client = None
 
     @classmethod
-    async def configure(cls, apikey, secret, sandbox=False):
+    async def configure(cls, apikey, secret, sandbox=False) -> AsyncBinanceClient:
         cls.sandbox = sandbox
         if cls.exchange is None:
             cls.exchange = ccxta.binanceus({
