@@ -2,7 +2,7 @@
 .idea/
 data/*
 !data/.gitkeep
-docs/site/
+wiki/site/
 
 # Golang
 go/pygo
